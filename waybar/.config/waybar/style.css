@@ -134,15 +134,15 @@ window#waybar {
 }
 
 #workspaces button.active {
-  border: 2px solid rgba(0, 0, 0, 0.6);
+  border: 2px solid #fbf1c7;
   border-radius: 21px;
-  background: #2b2721;
+  background: transparent;
 }
 
 #workspaces button.active:hover {
-  border: 2px solid rgba(0, 0, 0, 0.6);
+  border: 2px solid #fbf1c7;
   border-radius: 21px;
-  background: #2b2721;
+  background: transparent;
 }
 
 #workspaces button.urgent {

@@ -10,11 +10,11 @@
   "modules-left": [
     "custom/paddc",
     "custom/rofi",
-    "custom/hyprpicker",
-    "hyprland/window",
+    // "custom/hyprpicker",
+    "hyprland/workspaces"
   ],
 
-  "modules-center": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
 
   "modules-right": [
     "pulseaudio",
@@ -99,20 +99,20 @@
       "critical": 20
     },
     "format-icons": [" "," "," "," "," "],
-    "format": "<span color='#8ec07c' > {icon}</span>{capacity}%",
-    "format-critical": "<span color='#cc241d' > {icon}</span>{capacity}%",
-    "format-warning": "<span color='#d8a657' > {icon}</span>{capacity}%",
-    "format-full": "<span color='#8ec07c' > {icon}</span>{capacity}%",
-    "format-charging": "<span color='#8ec07c' > 󰂅 </span>{capacity}%",
-    "format-charging-warning": "<span color='#d8a657' > 󰢝 </span>{capacity}%",
-    "format-charging-critical": "<span color='#cc241d' > 󰢜 </span>{capacity}%",
-    "format-plugged": "<span color='#8ec07c' > 󰂅 </span>{capacity}%",
-    "format-alt": "<span color='#8ec07c' > 󱧥 </span>{time}",
+    "format": "<span color='#fbf1c7' > {icon}</span>{capacity}%",
+    "format-critical": "<span color='#fbf1c7' > {icon}</span>{capacity}%",
+    "format-warning": "<span color='#fbf1c7' > {icon}</span>{capacity}%",
+    "format-full": "<span color='#fbf1c7' > {icon}</span>{capacity}%",
+    "format-charging": "<span color='#fbf1c7' > 󰂅 </span>{capacity}%",
+    "format-charging-warning": "<span color='#fbf1c7' > 󰢝 </span>{capacity}%",
+    "format-charging-critical": "<span color='#fbf1c7' > 󰢜 </span>{capacity}%",
+    "format-plugged": "<span color='#fbf1c7' > 󰂅 </span>{capacity}%",
+    "format-alt": "<span color='#fbf1c7' > 󱧥 </span>{time}",
     "tooltip": true
   },
 
   "clock#date": {
-    "format": "<span color='#8ec07c' >󰃭 </span>{:%a %d %b}",
+    "format": "<span color='#fbf1c7' >󰃭 </span>{:%a %d %b}",
     "tooltip": true,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -138,7 +138,7 @@
   },
 
   "clock#time": {
-    "format": "<span color='#cc241d' >󱑂 </span>{:%I:%M %p}",
+    "format": "<span color='#fbf1c7' >󱑂 </span>{:%I:%M %p}",
     "tooltip": true,
     "tooltip-format": "Standard Time: {:%I:%M:%S %p}",
     "min-length": 8,
@@ -185,10 +185,10 @@
   },
 
   "bluetooth": {
-    "format": "<span color='#458588'>󰂰</span>",
-    "format-disabled": "<span color='#458588'>󰂲</span>",
-    "format-connected": "<span color='#458588'>󰂱</span>",
-    "format-connected-battery": "<span color='#458588'>󰂱</span>",
+    "format": "<span color='#fbf1c7'>󰂰</span>",
+    "format-disabled": "<span color='#fbf1c7'>󰂲</span>",
+    "format-connected": "<span color='#fbf1c7'>󰂱</span>",
+    "format-connected-battery": "<span color='#fbf1c7'>󰂱</span>",
 
     "tooltip-format": 
       "{num_connections} connected",
