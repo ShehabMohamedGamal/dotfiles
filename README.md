@@ -20,6 +20,16 @@ https://github.com/Morganamilo/paru
 paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git
 ```
 
+gtk theme
+
+https://github.com/VanillaDaFur/catppuccin-gtk
+
+downlaod the mocha theme and copy it to /usr/share/themes/
+
+follow the next tutorial and install the bluegrey icons
+
+https://github.com/catppuccin/papirus-folders?tab=readme-ov-file
+
 NVIDIA
 
 i already have env for you
