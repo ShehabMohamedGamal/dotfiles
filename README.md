@@ -10,7 +10,7 @@ add also the linux-kernel for stability
 install packages
 
 ```sh
-sudo pacman -S base-devel pacman-contrib wget hyprland hypridle hyprlock hyprcursor hyprgraphics hyprland-protocols hyprland-qt-support hyprland-qtutils hyprpaper hyprpolkitagent hyprutils xdg-user-dirs xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk nemo kitty cliphist rofi-wayland playerctl network-manager-applet zsh fzf zoxide xed xreader nwg-look qt5ct qt6ct kvantum kvantum-qt5 qt5-wayland qt6-wayland brightnessctl gnome-keyring swaync sddm firefox neovim nemo-fileroller vlc aquamarine uwsm bat blueman btop fastfetch ffmpegthumbnailer nano
+sudo pacman -S base-devel pacman-contrib wget hyprland hypridle hyprlock hyprcursor hyprgraphics hyprland-protocols hyprland-qt-support hyprland-qtutils hyprpaper hyprpolkitagent hyprutils xdg-user-dirs xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk nemo kitty cliphist rofi-wayland playerctl network-manager-applet zsh fzf zoxide xed xreader nwg-look qt5ct qt6ct kvantum kvantum-qt5 qt5-wayland qt6-wayland brightnessctl gnome-keyring swaync sddm firefox neovim nemo-fileroller vlc aquamarine uwsm bat blueman btop fastfetch ffmpegthumbnailer nano stow
 ```
 
 install paru :
