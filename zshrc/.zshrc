@@ -1,9 +1,10 @@
+# echo "loaded .zshrc"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+ # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 #if [[ -f "/opt/homebrew/bin/brew" ]] then
   # If you're using macOS, you'll want this enabled
@@ -19,11 +20,12 @@ if [ ! -d "$ZINIT_HOME" ]; then
    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
+
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+# zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -47,7 +49,9 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(oh-my-posh init zsh -c ~/zen.toml)"
+
 
 # Keybindings
 bindkey -e
@@ -87,11 +91,38 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 alias vim=nvim
 
+# alias cat=bat
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+
+# Define the theme name and destination directory
+bat_theme_name="Catppuccin Mocha.tmTheme"
+bat_theme_dir="$(bat --config-dir)/themes"
+bat_theme_path="$bat_theme_dir/$bat_theme_name"
+bat_theme_url="https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme"
+
+# Check if the theme is already installed
+if [[ ! -f "$bat_theme_path" ]]; then
+  echo "Catppuccin Mocha theme not found for bat. Installing..."
+  mkdir -p "$bat_theme_dir"
+  wget -P "$bat_theme_dir" "$bat_theme_url"
+
+  # Regenerate bat cache
+  if command -v bat &>/dev/null; then
+    echo "Rebuilding bat cache..."
+    bat cache --build
+  else
+    echo "bat command not found, skipping cache rebuild."
+  fi
+
+fi
+
+export PATH=$HOME/.config/rofi/scripts:$PATH
+
 export XDG_SESSION_TYPE=wayland
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORM=wayland
 export CLUTTER_BACKEND=wayland
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
+export BAT_THEME="Catppuccin Mocha"
 
-#alias 'dotnet run --verbosity quiet'='dotnet run'
