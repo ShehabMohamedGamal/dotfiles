@@ -1,10 +1,12 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    //"height": 0, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 10, // Gaps between modules (4px)
+//    "margin":0,
+//      "exclusive":true,
+    "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "custom/launcher",
@@ -32,6 +34,7 @@
         // "backlight",
         "tray",
         "custom/notification",
+        "custom/wallpaper",
         // "keyboard-state",
         "hyprland/language",
         // "power-profiles-daemon",
@@ -122,8 +125,12 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
     
-  "custom/idle_inhibitor": {
-    "format": "<span font='26'>{}</span>",
+  "idle_inhibitor": {
+     "format": "{icon}",
+    "format-icons": {
+        "activated": "󰛊",
+        "deactivated": "󰾪"
+    },
     "exec": "$HOME/.config/waybar/check-idle.sh",
     "on-click": "$HOME/.config/waybar/toggle-idle.sh",
     "tooltip": false,
@@ -175,11 +182,11 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "battery#bat2": {
@@ -294,6 +301,11 @@
     "on-click":"rofi -modi clipboard:/home/shehab/.config/rofi/cliphist-rofi-img -show clipboard -show-icons -theme '/home/shehab/.config/rofi/catppuccin-clipboard.rasi' " // 
 
 
-}
+},
+
+"custom/wallpaper":{
+    "format":"󰸉",
+    "on-click": "${XDG_CONFIG_HOME}/waybar/wallpaper.sh"
+    }
 
 }
