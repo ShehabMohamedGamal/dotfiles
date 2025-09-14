@@ -1,0 +1,6 @@
+export APP2UNIT_SLICES='a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice'
+
+export XCURSOR_THEME="BreezeX-Black"
+export XCURSOR_SIZE=32
+export HYPRCURSOR_SIZE=32
+export HYPRCURSOR_THEME=BreezeX-Black

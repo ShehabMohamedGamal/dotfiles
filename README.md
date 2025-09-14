@@ -17,7 +17,7 @@ install paru :
 https://github.com/Morganamilo/paru
 
 ```sh
-paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git
+paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git pyprland
 ```
 
 gtk theme
@@ -52,19 +52,31 @@ winetricks dxvk
 paru -S heroic-games-launcher-bin
 ```
 
+hyprland plugins
+
+https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo
+
+https://github.com/VirtCode/hypr-dynamic-cursors
 
 useful apps
 
+FS tools
+
 ```sh
-sudo pacman -S btrfs-progs exfat-utils ntfs-3g timeshift
+sudo pacman -S btrfs-progs exfat-utils ntfs-3g 
 ```
 
 
+snapshots
 
 ```sh
-paru -S timeshift-autosnap pmount vesktop-bin
+paru -S timeshift timeshift-autosnap  
 ```
 
-pmount for mounting without root pass
+
 
 vesktop for discord
+
+```sh
+vesktop-bin
+```

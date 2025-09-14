@@ -22,7 +22,7 @@
         
     ],
     "modules-right": [
-        
+        "custom/pacman",
         "idle_inhibitor",
         "custom/clipboard",
         // "pulseaudio",
@@ -306,6 +306,17 @@
 "custom/wallpaper":{
     "format":"󰸉",
     "on-click": "${XDG_CONFIG_HOME}/waybar/wallpaper.sh"
-    }
+    },
+
+ "custom/pacman": {
+    "format": "{}  ",
+    "interval": 3600,                     // every hour
+    "exec": "checkupdates | wc -l",       // # of updates
+    "exec-if": "exit 0",                  // always run; consider advanced run conditions
+    "on-click": "checkupdates | wc -l", 
+    "signal": 8
+  }
+
+
 
 }

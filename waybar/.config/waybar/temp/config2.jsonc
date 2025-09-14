@@ -1,0 +1,58 @@
+// {
+//     "wlr/taskbar": {
+//     "format": "{icon} {name}",
+//     "icon-size": 14,
+//     // "icon-theme": "Numix-Circle",
+//     "tooltip-format": "{title}",
+//     "on-click": "activate",
+//     "on-click-middle": "close"
+
+//     },
+
+    
+
+
+// "modules-left":[
+//     "wlr/taskbar"
+   
+// ]
+
+// }
+
+{
+  "layer": "top",
+  "position": "bottom",
+  "modules-left": [
+    "wlr/taskbar" 
+  ],
+  "modules-right":[
+
+    "custom/pacman",
+    "custom/systemd"
+    
+  ],
+
+  "wlr/taskbar": {
+    "format": "{icon} {name}",
+    "icon-size": 14,
+    // "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close"
+
+    },
+
+    "custom/pacman": {
+    "format": "{}  ",
+    "interval": 3600,                     // every hour
+    "exec": "checkupdates | wc -l",       // # of updates
+    "exec-if": "exit 0",                  // always run; consider advanced run conditions
+    "on-click": "checkupdates | wc -l", 
+    "signal": 8
+  },
+    "custom/systemd": {
+    "format":"{} ",
+    "exec": "systemctl --failed --no-legend | wc -l",
+    "on-click": "systemctl --failed --no-legend | wc -l"
+    }
+}
