@@ -2,10 +2,10 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    //"height": 0, // Waybar height (to be removed for auto height)
+//    "height": 0, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
 //    "margin":0,
-//      "exclusive":true,
+     "exclusive":true,
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
@@ -305,7 +305,8 @@
 
 "custom/wallpaper":{
     "format":"󰸉",
-    "on-click": "${XDG_CONFIG_HOME}/waybar/wallpaper.sh"
+    "on-click": "waypaper  --random",
+    "on-click-right": "waypaper"
     },
 
  "custom/pacman": {

@@ -8,7 +8,10 @@
 window#waybar {
   /* you can also GTK3 CSS functions! */
   background-color: shade(@base, 0.9);
-  border: 2px solid alpha(@crust, 0.3);
+  /*border: 2px solid alpha(@crust, 0.3);*/
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 

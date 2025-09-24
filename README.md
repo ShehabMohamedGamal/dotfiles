@@ -17,7 +17,7 @@ install paru :
 https://github.com/Morganamilo/paru
 
 ```sh
-paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git pyprland
+paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git pyprland waypaper
 ```
 
 gtk theme

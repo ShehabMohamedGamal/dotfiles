@@ -4,6 +4,21 @@ plugins = ["scratchpads"]
 animation = "fromTop"
 command = "kitty --class kitty-dropterm"
 class = "kitty-dropterm"
-size = "75% 60%"
+size = "85% 70%"
 max_size = "1920px 100%"
 margin = 50
+[scratchpads.email]
+animation = "fromTop"
+command = "uwsm app -- betterbird"
+class = "eu.betterbird.Betterbird"
+size = "80% 80%"
+max_size = "1920px 100%"
+margin = 40
+
+[scratchpads.fdm]
+animation = "fromTop"
+command = "uwsm app -- fdm"
+class = "fdm"
+size = "80% 60%"
+max_size = "1920px 100%"
+margin = 40
