@@ -107,6 +107,70 @@ paru -S vesktop-bin
 
 ---
 
+# Hyprland Keybindings
+
+##  Core / Everyday
+| Keys              | Action                 | Command         |
+| ----------------- | ---------------------- | --------------- |
+| SUPER + Q         | Open terminal          | `kitty`         |
+| SUPER + W         | Open browser           | `brave`         |
+| SUPER + E         | File manager           | `nemo`          |
+| SUPER + R / Space | App launcher           | `rofi`          |
+| SUPER + C         | Kill window            |                 |
+| SUPER + F         | Fullscreen             |                 |
+| SUPER + X         | Toggle floating        |                 |
+| SUPER + M         | Powermenu              | `rofi`          |
+| SUPER + V         | Clipboard manager      | `rofi-cliphist` |
+| SUPER + N         | Switch keyboard layout |                 |
+| esc               | caps lock              |                 |
+| caps lock         | esc                    |                 |
+
+---
+
+##  Workspaces
+| Keys                     | Action                  |
+|--------------------------|-------------------------|
+| SUPER + [1–0]            | Switch workspace (1–10) |
+| SUPER + SHIFT + [1–0]    | Move window to workspace |
+| SUPER + Scroll Up/Down   | Cycle through workspaces |
+
+---
+
+##  Window Management
+| Keys                       | Action                 |
+|----------------------------|------------------------|
+| SUPER + SHIFT + Arrows     | Move window            |
+| SUPER + H / J / K / L      | Move focus (vim-style) |
+| SUPER + LMB (drag)         | Move window            |
+| SUPER + RMB (drag)         | Resize window          |
+
+---
+
+##  Screenshots
+| Keys             | Action   | Tool      |
+|------------------|----------|-----------|
+| Print            | Window   | `hyprshot` |
+| Shift + Print    | Region   | `hyprshot` |
+| Ctrl + Print     | Output   | `hyprshot` |
+
+---
+
+##  Pypr Scratchpads
+| Keys        | Action            | App                  |
+|-------------|------------------|----------------------|
+| SUPER + A   | Toggle terminal   | Pypr scratchpad      |
+| SUPER + B   | Toggle email      | Betterbird           |
+| SUPER + D   | Toggle FDM        | Free Download Manager|
+| SUPER + S   | Toggle WhatsApp   | WhatsApp             |
+
+---
+
+##  Special Features
+| Keys        | Action         |
+|-------------|----------------|
+| ALT + TAB   | HyprExpo       |
+
+---
 ## Inspiration
 
 This configuration is based on:
