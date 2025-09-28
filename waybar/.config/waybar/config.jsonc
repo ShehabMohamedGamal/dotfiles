@@ -151,7 +151,20 @@
         // "tooltip-format": "<big>{:%I %M %p}</big>\n<tt><small>{calendar}</small></tt>",
         // "format-alt": "{:%Y-%m-%d}"
             "format": "{:%I:%M %p}",
-            "tooltip-format": "<big>{:%I:%M %p}</big>\n<tt><small>{calendar}</small></tt>"
+            "tooltip-format": "<big>{:%I:%M %p}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                               }
+        },
 
     },
     "cpu": {
@@ -305,8 +318,8 @@
 
 "custom/wallpaper":{
     "format":"󰸉",
-    "on-click": "waypaper  --random",
-    "on-click-right": "waypaper"
+    "on-click": "${XDG_CONFIG_HOME}/waybar/wallpaper.sh",
+    "on-click-right": "${XDG_CONFIG_HOME}/waybar/rofiwallpaper.sh"
     },
 
  "custom/pacman": {

@@ -22,3 +22,22 @@ class = "fdm"
 size = "80% 60%"
 max_size = "1920px 100%"
 margin = 40
+
+[scratchpads.whatsapp]
+animation = "fromTop"
+command = "uwsm app -- whatsapp-linux-desktop"
+class = "WhatsApp Desktop"
+size = "80% 60%"
+max_size = "1920px 100%"
+margin = 40
+
+[wallpapers]
+path = "~/dotfiles/wallpapers_catppuccin"
+interval = 60 # change every hour
+extensions = ["jpg", "jpeg","png","gif"]
+recurse = true
+## Using swww
+command = 'swww img --transition-type simple "[file]"'
+clear_command = "swww clear"
+
+
