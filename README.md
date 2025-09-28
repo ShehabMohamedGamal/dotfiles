@@ -1,82 +1,121 @@
 
-hyperland catppuccin mocha flamingo rice with nerd apple font 
+# Dotfiles
 
-first you need to install arch linux 
+Hyprland Catppuccin Mocha Flamingo rice with Nerd Apple font.
 
-use arch install with zen-kernel, minimal desktop, pipewire , btrfs  and zram
+---
 
-add also the linux-lts-kernel for stability 
+## Installation
 
-install packages
+First, install [Arch Linux](https://archlinux.org/) using arch install with:
+- Zen kernel
+- Minimal desktop setup
+- PipeWire
+- Btrfs
+- ZRAM
+
+Also install the **linux-lts kernel** for stability.
+
+---
+
+## Packages
 
 ```sh
-sudo pacman -S base-devel pacman-contrib wget hyprland hypridle hyprlock hyprcursor hyprgraphics hyprland-protocols hyprland-qt-support hyprland-qtutils hyprpolkitagent hyprutils xdg-user-dirs xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk nemo kitty cliphist rofi-wayland playerctl network-manager-applet zsh fzf zoxide xed evence nwg-look qt5ct qt6ct kvantum kvantum-qt5 qt5-wayland qt6-wayland brightnessctl gnome-keyring swaync sddm firefox neovim nemo-engrampa engrampa nemo-preview vlc aquamarine uwsm bat blueman btop fastfetch ffmpegthumbnailer nano swww helix
+sudo pacman -S base-devel pacman-contrib wget hyprland hypridle hyprlock hyprcursor hyprgraphics \
+hyprland-protocols hyprland-qt-support hyprland-qtutils hyprpolkitagent hyprutils \
+xdg-user-dirs xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
+nemo kitty cliphist rofi-wayland playerctl network-manager-applet zsh fzf zoxide \
+xed evince nwg-look qt5ct qt6ct kvantum kvantum-qt5 qt5-wayland qt6-wayland brightnessctl \
+gnome-keyring swaync sddm firefox neovim nemo-engrampa engrampa nemo-preview vlc \
+aquamarine uwsm bat blueman btop fastfetch ffmpegthumbnailer nano swww helix
 ```
 
-install paru :
-https://github.com/Morganamilo/paru
+## Paru
+
+Install [paru](https://github.com/Morganamilo/paru):
 
 ```sh
-paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git pyprland betterbird-bin whatsapp-linux-desktop-bin freedownloadmanager brave-bin
+paru -S catppuccin-sddm-theme-mocha nerd-fonts-apple kvantum-theme-catppuccin-git sddm-conf \
+xviewer breezex-cursor-theme swayosd-gtk3 app2unit-git pyprland betterbird-bin \
+whatsapp-linux-desktop-bin freedownloadmanager brave-bin
 ```
 
-gtk theme
+---
 
-https://github.com/VanillaDaFur/catppuccin-gtk
+## Theming
 
-downlaod the mocha theme and copy it to /usr/share/themes/
+- **GTK Theme**: [Catppuccin GTK](https://github.com/VanillaDaFur/catppuccin-gtk)  
+    Download the **Mocha** theme and copy it to `/usr/share/themes/`
+    
+- **Icons**: [Catppuccin Papirus Folders](https://github.com/catppuccin/papirus-folders)  
+    Follow the instructions to install Bluegrey icons.
+    
 
-follow the next tutorial and install the bluegrey icons
+---
 
-https://github.com/catppuccin/papirus-folders?tab=readme-ov-file
+## NVIDIA
 
-NVIDIA
+I already have an env section configured, edit if needed:
 
-i already have env section edit it if you need to
+- [NVIDIA (Arch Wiki)](https://wiki.archlinux.org/title/NVIDIA)
+    
+- [Hardware Video Acceleration](https://wiki.archlinux.org/title/Hardware_video_acceleration)  
+    
 
-https://wiki.archlinux.org/title/NVIDIA
+---
 
-https://wiki.archlinux.org/title/Hardware_video_acceleration (you might need to add yourself to the video and render groups)
+## Gaming
 
-
-
-Gaming
-
-https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+- [Lutris Drivers Guide](https://github.com/lutris/docs/blob/master/InstallingDrivers.md)
+    
 
 ```sh
 winetricks dxvk
-```
-
-```sh
 paru -S heroic-games-launcher-bin
 ```
 
-hyprland plugins
+---
 
-https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo
+## Hyprland Plugins
 
-https://github.com/VirtCode/hypr-dynamic-cursors
+- [Hyprexpo](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo)
+    
+- [Hypr Dynamic Cursors](https://github.com/VirtCode/hypr-dynamic-cursors)
+    
 
-useful apps
+---
 
-FS tools
+## Useful Apps
 
-```sh
-sudo pacman -S btrfs-progs exfat-utils ntfs-3g 
-```
-
-
-snapshots
+**File system tools:**
 
 ```sh
-paru -S timeshift timeshift-autosnap  
+sudo pacman -S btrfs-progs exfat-utils ntfs-3g
 ```
 
-
-
-vesktop for discord
+**Snapshots:**
 
 ```sh
-vesktop-bin
+paru -S timeshift timeshift-autosnap
 ```
+
+**Discord (Vesktop):**
+
+```sh
+paru -S vesktop-bin
+```
+
+---
+
+## Inspiration
+
+This configuration is based on:
+
+- [typecraft-dev](https://github.com/typecraft-dev/dotfiles)
+    
+- [dreamsofcode](https://github.com/dreamsofcode-io/dotfiles)
+    
+- [dreamsofautonomy](https://github.com/dreamsofautonomy/dotfiles)
+    
+- The packages' example files
+    
