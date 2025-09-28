@@ -130,5 +130,3 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 alias paruskip='paru -Sua --pacman "pacman --disablehooks=90-timeshift-autosnap"'
 
-export PATH="/home/shehab/.config/herd-lite/bin:$PATH"
-export PHP_INI_SCAN_DIR="/home/shehab/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
