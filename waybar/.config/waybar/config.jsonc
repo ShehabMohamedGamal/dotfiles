@@ -138,7 +138,7 @@
     },
     
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 20,
         "spacing": 10,
         "icons": {
           "blueman": "bluetooth"
@@ -322,14 +322,16 @@
     "on-click-right": "${XDG_CONFIG_HOME}/waybar/rofiwallpaper.sh"
     },
 
- "custom/pacman": {
-    "format": "{}  ",
-    "interval": 3600,                     // every hour
-    "exec": "checkupdates | wc -l",       // # of updates
-    "exec-if": "exit 0",                  // always run; consider advanced run conditions
-    "on-click": "checkupdates | wc -l", 
-    "signal": 8
-  }
+//* "custom/pacman": {
+    //"format": "{}  ",
+   // "interval": 3600,                     // every hour
+   // "exec": "checkupdates | wc -l",       // # of updates
+    //"exec-if": "exit 0",                  // always run; consider advanced run conditions
+    //"on-click": "checkupdates | wc -l", 
+   // "signal": 8
+ // }
+//*/
+
 
 
 

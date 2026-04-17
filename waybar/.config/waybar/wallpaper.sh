@@ -7,4 +7,4 @@ WALLPAPER_DIR="$HOME/dotfiles/wallpapers_catppuccin"
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
 
 # Apply the selected wallpaper
-swww img --transition-fps 120 "$WALLPAPER"
+awww img --transition-fps 120 "$WALLPAPER"

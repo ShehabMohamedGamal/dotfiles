@@ -11,6 +11,6 @@ done | rofi -dmenu -i -p " Wallpaper" -show-icons -theme "/home/shehab/.confi
 
 # If something was chosen, set it
 if [ -n "$CHOICE" ]; then
-    swww img --transition-fps 120 "$CHOICE"
+    awww img --transition-fps 120 "$CHOICE"
 fi
 

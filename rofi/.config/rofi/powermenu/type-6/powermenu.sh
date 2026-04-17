@@ -82,6 +82,8 @@ run_cmd() {
 				i3-msg exit
 			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+            elif [[ "$DESKTOP_SESSION" == 'hyprland-uwsm' ]]; then
+                hyprctl dispatch exit
 			fi
 		fi
 	else
@@ -104,6 +106,8 @@ case ${chosen} in
     $lock)
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
 			betterlockscreen -l
+        elif [[ -x '/usr/bin/hyprlock' ]]; then
+            hyprlock
 		elif [[ -x '/usr/bin/i3lock' ]]; then
 			i3lock
 		fi
